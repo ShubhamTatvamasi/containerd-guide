@@ -15,6 +15,11 @@ list all containers in `k8s.io` namespace
 ctr -n k8s.io c ls -q
 ```
 
+pull container image
+```bash
+ctr i pull docker.io/library/busybox:latest
+```
+
 remove image in `k8s.io` namespace
 ```bash
 ctr -n k8s.io i rm docker.io/library/nginx:alpine
